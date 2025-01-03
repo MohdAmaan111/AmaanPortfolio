@@ -818,6 +818,10 @@ section,
   border-radius: 50%; 
 }
 
+.hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
