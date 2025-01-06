@@ -807,19 +807,29 @@ section,
 }
 
 .hero-profile {
-  height: 350px;
-  width: 350px;
+  height: 430px;
+  width: 430px;
 }
 
 .hero-profile img {
-  height: 100%;
-  width: 100%;
+  /* height: 100%; */
+  /* width: 50%; */
   object-fit: cover;
   border-radius: 50%; 
 }
 
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 @media (max-width: 768px) {
