@@ -34,6 +34,9 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- jQuery FIle -->
+    <script src="assets/jquery/jquery.min.js"></script>
   </head>
 
   <body class="index-page">
@@ -105,32 +108,30 @@
               data-aos="fade-up"
               data-aos-delay="100"
             >
-            <div class="">
-              <h2>Hello,</h2>
-              <h2>This is Amaan</h2>
+              <div class="">
+                <h2>Hello,</h2>
+                <h2>This is Amaan</h2>
 
-              <div class="rotating-text">
-                <p>I am a</p>
-                <p>
-                  <span class="word w-1">Developer.</span>
-                  <span class="word w-2">Designer.</span>
-                  <span class="word w-3">Freelancer.</span>
-                </p>
+                <div class="rotating-text">
+                  <p>I am a</p>
+                  <p>
+                    <span class="word w-1">Developer.</span>
+                    <span class="word w-2">Designer.</span>
+                    <span class="word w-3">Freelancer.</span>
+                  </p>
+                </div>
+
+                <div class="social-links">
+                  <a href="//wa.me/6393690754" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                  <a href="https://github.com/MohdAmaan111" target="_blank"><i class="bi bi-github"></i></a>
+                  <a href="https://www.instagram.com/amaan_reigns" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/mohd-amaan-653336246" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+                <a href="#" class="btn-get-started text-center"
+                  >Available for Hire<br
+                /></a>
               </div>
-
-              <div class="social-links">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-              
-              <a href="#" class="btn-get-started text-center"
-                >Available for Hire<br
-              /></a>
-            </div>
-              
-
             </div>
 
             <div class="col-lg-5 hero-profile">
@@ -164,10 +165,15 @@
             <div class="col-lg-5 content">
               <h2>Web Developer.</h2>
               <p class="py-3">
-                Hi, I'm a skilled full-stack web developer with a passion for creating dynamic, user-friendly websites and applications.
+                Hi, I'm a skilled full-stack web developer with a passion for
+                creating dynamic, user-friendly websites and applications.
               </p>
               <p class="py-3">
-                With expertise in both front-end and back-end development, I specialize in delivering tailored solutions to meet your business needs. Whether you're looking for a sleek website, robust web application, or custom feature implementation, I'm here to help. Let's work together to bring your vision to life!
+                With expertise in both front-end and back-end development, I
+                specialize in delivering tailored solutions to meet your
+                business needs. Whether you're looking for a sleek website,
+                robust web application, or custom feature implementation, I'm
+                here to help. Let's work together to bring your vision to life!
               </p>
             </div>
           </div>
@@ -255,7 +261,7 @@
                   <i class="bi bi-geo-alt flex-shrink-0"></i>
                   <div>
                     <h3>Location</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <p>56M/8B Gaus Nagar, Prayagraj, Uttar Pradesh, India</p>
                   </div>
                 </div>
               </div>
@@ -266,7 +272,7 @@
                   <i class="bi bi-telephone flex-shrink-0"></i>
                   <div>
                     <h3>Call</h3>
-                    <p>+1 5589 55488 55</p>
+                    <p>+91 63936 90754</p>
                   </div>
                 </div>
               </div>
@@ -277,7 +283,7 @@
                   <i class="bi bi-envelope flex-shrink-0"></i>
                   <div>
                     <h3>Email</h3>
-                    <p>info@example.com</p>
+                    <p>amaanreigns01@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -287,12 +293,19 @@
           <!-- End Info -->
 
           <form
-            action="forms/contact.php"
+            action="https://api.web3forms.com/submit"
             method="post"
+            id="sendMessage" 
             class="php-email-form"
             data-aos="fade-up"
             data-aos-delay="300"
           >
+            <input
+              type="hidden"
+              name="access_key"
+              value="de15db46-9716-4161-8ceb-f2c619a55a6a"
+            />
+            <!-- gmail access key -->
             <div class="row gy-4">
               <div class="col-md-6">
                 <input
@@ -343,6 +356,7 @@
 
                 <button type="submit">Send Message</button>
               </div>
+              <div id="result"></div>
             </div>
           </form>
           <!-- End Contact Form -->
@@ -361,17 +375,17 @@
           </p>
         </div>
         <div class="social-links d-flex justify-content-center">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
+          <a href="//wa.me/6393690754" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://github.com/MohdAmaan111" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/amaan_reigns" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/mohd-amaan-653336246" target="_blank"><i class="bi bi-linkedin"></i></a>
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="#">Amaan</a>
+          Designed by <a href="https://amaan-folio.netlify.app">Amaan</a>
         </div>
       </div>
     </footer>
@@ -383,12 +397,12 @@
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/jquery/sweetalert.min.js"></script>
   </body>
 </html>
